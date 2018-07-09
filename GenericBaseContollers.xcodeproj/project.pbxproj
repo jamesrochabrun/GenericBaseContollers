@@ -21,6 +21,7 @@
 		0905E8C720F2CAC100D1ED41 /* BaseTableViewSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905E8C620F2CAC100D1ED41 /* BaseTableViewSearchController.swift */; };
 		0905E8C920F2CAD300D1ED41 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905E8C820F2CAD300D1ED41 /* BaseTableViewCell.swift */; };
 		0905E8CB20F2CAF600D1ED41 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905E8CA20F2CAF600D1ED41 /* GenericTableViewDataSource.swift */; };
+		0905E8CE20F2EAAA00D1ED41 /* SoccerPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905E8CD20F2EAAA00D1ED41 /* SoccerPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0905E8C620F2CAC100D1ED41 /* BaseTableViewSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewSearchController.swift; sourceTree = "<group>"; };
 		0905E8C820F2CAD300D1ED41 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		0905E8CA20F2CAF600D1ED41 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		0905E8CD20F2EAAA00D1ED41 /* SoccerPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SoccerPlayer.swift; path = GenericBaseContollers/GenericModels/TableView/SoccerPlayer.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				0905E8A020F2C8F200D1ED41 /* AppDelegate.swift */,
 				0905E8B620F2C93000D1ED41 /* ListTableViewController.swift */,
+				0905E8CC20F2EAA000D1ED41 /* Models */,
 				0905E8BD20F2C9D200D1ED41 /* GenericModels */,
 				0905E8B820F2C99100D1ED41 /* Protocols */,
 				0905E8A220F2C8F200D1ED41 /* ViewController.swift */,
@@ -121,6 +124,14 @@
 				0905E8CA20F2CAF600D1ED41 /* GenericTableViewDataSource.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		0905E8CC20F2EAA000D1ED41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0905E8CD20F2EAAA00D1ED41 /* SoccerPlayer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				0905E8B720F2C93000D1ED41 /* ListTableViewController.swift in Sources */,
 				0905E8A320F2C8F200D1ED41 /* ViewController.swift in Sources */,
 				0905E8A120F2C8F200D1ED41 /* AppDelegate.swift in Sources */,
+				0905E8CE20F2EAAA00D1ED41 /* SoccerPlayer.swift in Sources */,
 				0905E8CB20F2CAF600D1ED41 /* GenericTableViewDataSource.swift in Sources */,
 				0905E8BC20F2C9B300D1ED41 /* Searchable.swift in Sources */,
 				0905E8C120F2CA4B00D1ED41 /* BaseCollectionViewCell.swift in Sources */,

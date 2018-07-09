@@ -9,44 +9,16 @@
 import Foundation
 import UIKit
 
-class ListTableViewController: BaseTableViewSearchController<DogCell, Dog> {
+class ListTableViewController: BaseTableViewSearchController<SoccerCell, SoccerPlayer> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dogs = [Dog(name: "Zizou"), Dog(name: "Peluso"), Dog(name: "Cali")]
-        self.models = dogs
+        
+        let soccerPlayers = [SoccerPlayer(name: "Messi"), SoccerPlayer(name: "Ronaldo"), SoccerPlayer(name: "Modric"), SoccerPlayer(name: "Guerrero"), SoccerPlayer(name: "Rodriguez"), SoccerPlayer(name: "Kane"), SoccerPlayer(name: "Ramos"), SoccerPlayer(name: "Pique"), SoccerPlayer(name: "Mbape"), SoccerPlayer(name: "Pogba"), SoccerPlayer(name: "Zidane"), SoccerPlayer(name: "Kross"), SoccerPlayer(name: "Puyol"), SoccerPlayer(name: "Beckham")]
+        
+        self.models = soccerPlayers
     }
 }
-
-//// Models
-struct Dog: Searchable {
-    
-    var query: String {
-        return name
-    }
-    
-    let name: String
-}
-
-struct DogViewModel {
-    
-    let name: String
-    
-    init(model: Dog) {
-        self.name = model.name
-    }
-}
-
-class DogCell: BaseTableViewCell<Dog> {
-    
-    override var item: Dog! {
-        didSet {
-            let vModel = DogViewModel(model: item)
-            textLabel?.text = vModel.name
-        }
-    }
-}
-
 
 
 
